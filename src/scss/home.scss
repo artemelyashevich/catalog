@@ -1,0 +1,29 @@
+.home {
+    &__cars {
+
+        display: flex;
+        column-count: 2;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        &__car {
+            &-photo {
+                height: 25em;
+                width: 40em;
+                overflow: hidden;
+            }
+
+            margin-bottom: 50px;
+
+            &-btn {
+                background: $bg-color;
+                font-size: 15px;
+                color: $font;
+                border: none;
+                cursor: pointer;
+                border-radius: 10px;
+                padding: 10px 15px;
+            }
+        }
+    }
+}

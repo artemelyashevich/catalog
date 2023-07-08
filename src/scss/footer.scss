@@ -1,0 +1,17 @@
+.footer {
+    z-index: 1;
+    width: 94em;
+    height: 9em;
+    margin: .5em;
+    border-radius: .5em;
+    background: $bg-color;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        margin-top: 1.5em;
+        font-size: 20px;
+    }
+}

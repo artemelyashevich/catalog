@@ -1,0 +1,59 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Mercedes-Benz S 450 4MATIC Sedan long",
+      "description": "Новый Mercedes S-Klasse с заводским обозначением W221 являет собой воплощение последних достижений техники. Новый S-Klasse больше, просторнее и представительнее предшественника. В салоне самое главное изменение – отказ от напольного рычага передач.",
+      "price": 247550 ,
+      "type": "Седан",
+      "photo": "https://mbbelarus.by/upload/resize_cache/iblock/9b9/ssiz3c2ppl1v9xmf5rdqvu6sz3hwxkm3/680_456_2/01.jpg",
+      "is_published": true
+    },
+    {
+      "id": 2,
+      "title": "Mercedes-Benz GLS 400 d 4MATIC",
+      "description": "Новый Mercedes GLS только сошел с конвейера, но уже успел вызвать восхищенные отзывы и обзоры. От предыдущей генерации кроссовер премиум-класса отличает еще более смелый экстерьер, больше простора в салоне, усиленный арсенал систем и опций для безопасности и комфорта.",
+      "price": 169000 ,
+      "type": "Седан",
+      "photo": "https://mbbelarus.by/upload/resize_cache/iblock/c1f/q0za7rixpj0bgdam5pxsg7bm401ugpt8/680_456_2/01.jpg",
+      "is_published": true
+    },
+    {
+      "id": 3,
+      "title": "Mercedes-AMG G 63",
+      "description": "Новый Mercedes-Benz G 63 представляет собой спортивную мощь AMG в самом потрясающем её исполнении. Это – автомобиль для сильных людей, стремящихся побеждать всегда и везде. Он прирождённый лидер, излучающий уверенность и превосходство. Внедорожник Mercedes-AMG G 63 подарит Вам чувство абсолютной свободы и позволит открывать новые, прежде недостижимые горизонты!",
+      "price": 169000 ,
+      "type": "Внедорожник",
+      "photo": "https://mbbelarus.by/upload/resize_cache/iblock/a27/d5i38ec6w8w6cr3hh6706zvm3n9kfd5z/680_456_2/01.jpg",
+      "is_published": true
+    },
+    {
+      "id": 4,
+      "title": "Mercedes-Benz E 200 4MATIC",
+      "description": "Новый Mercedes-Benz G 63 представляет собой спортивную мощь AMG в самом потрясающем её исполнении. Это – автомобиль для сильных людей, стремящихся побеждать всегда и везде. Он прирождённый лидер, излучающий уверенность и превосходство. Внедорожник Mercedes-AMG G 63 подарит Вам чувство абсолютной свободы и позволит открывать новые, прежде недостижимые горизонты!",
+      "price": 37150 ,
+      "type": "Внедорожник",
+      "photo": "https://mbbelarus.by/upload/resize_cache/iblock/5cb/annapq38m67rm5had3k2y54le6jspksa/680_456_2/01.jpg",
+      "is_published": true
+    },
+    {
+      "id": 5,
+      "title": "Mercedes-Benz E 200 4MATIC",
+      "description": "Новый Mercedes-Benz G 63 представляет собой спортивную мощь AMG в самом потрясающем её исполнении. Это – автомобиль для сильных людей, стремящихся побеждать всегда и везде. Он прирождённый лидер, излучающий уверенность и превосходство. Внедорожник Mercedes-AMG G 63 подарит Вам чувство абсолютной свободы и позволит открывать новые, прежде недостижимые горизонты!",
+      "price": 37150 ,
+      "type": "Кабриолет",
+      "photo": "https://mbbelarus.by/upload/resize_cache/iblock/5cb/annapq38m67rm5had3k2y54le6jspksa/680_456_2/01.jpg",
+      "is_published": true
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

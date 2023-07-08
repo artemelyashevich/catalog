@@ -1,0 +1,117 @@
+header {
+    color: $font;
+
+    h1 {
+        color: $font;
+    }
+}
+
+.header {
+
+    padding: 20px 0 20px 0;
+    background: $bg-color;
+    border-radius: 15px;
+    margin: .5em;
+    width: 94em;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+    }
+
+    &__center {
+        &-input {
+            width: 50em;
+            height: 56px;
+            padding: 9px 38px 9px 47px;
+            border: 0;
+            background-color: rgba(255, 255, 255, 0.852);
+            border-radius: 28px;
+            color: $input-text;
+            cursor: pointer;
+            font-size: 18px;
+            outline: none;
+
+            &::placeholder {
+                color: $placeholder;
+            }
+        }
+    }
+
+    &__right {
+        margin-top: 5px;
+        display: flex;
+        column-gap: 30px;
+        font-size: 20px;
+
+        a {
+            color: $font;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &_icon {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    &__bottom {
+        &-list {
+
+            display: flex;
+            margin-top: 50px;
+            justify-content: space-around;
+            margin-bottom: 10px;
+
+            &-item {
+                display: flex;
+                column-gap: 10px;
+                align-items: center;
+
+                input[type="radio"] {
+
+                    cursor: pointer;
+                    -webkit-appearance: none;
+                    appearance: none;
+                    background-color: #11111100;
+                    margin: 0;
+
+                    font: inherit;
+                    color: currentColor;
+                    width: 1em;
+                    height: 1em;
+                    border: 0.15em solid currentColor;
+                    border-radius: 50%;
+                    transform: translateY(-0.075em);
+
+                    display: grid;
+                    place-content: center;
+                }
+
+                input[type="radio"]::before {
+
+                    content: "";
+                    width: 0.5em;
+                    height: 0.5em;
+                    border-radius: 50%;
+                    transform: scale(0);
+                    transition: 120ms transform ease-in-out;
+
+                    background-color: rgb(225, 224, 227);
+                }
+
+                input[type="radio"]:checked::before {
+                    transform: scale(.5);
+                }
+            }
+        }
+    }
+}
