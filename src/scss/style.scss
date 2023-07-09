@@ -1,38 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@600&family=Montserrat:wght@400;600;700&display=swap');
 
-$bg-color: linear-gradient(90deg,#1275ff,#3a93ff);
-$placeholder: #a7a7a7; 
+$bg-color: linear-gradient(90deg, #1275ff, #3a93ff);
+$placeholder: #a7a7a7;
 $font: #fff;
 $input-text: #333;
 $font-content: #222;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+* {
+  scrollbar-width: none;
+  scrollbar-color: #4f99ff #ebebeb;
+}
+
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ebebeb;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #4f99ff;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
 }
 
 .container {
-    color: $font-content;
-    position: relative;
-    width: 94em;
-    margin: 0 auto;
-    margin-top: 50px;
-    padding: 40px 40px 100px 40px;
-    background-color: #fff;
+  color: $font-content;
+  position: relative;
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 40px 40px 100px 40px;
+  background-color: #fff;
 }
 
-h1, h2, h3 {
-    font-family: 'Geologica', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: 'Geologica', sans-serif;
 }
 
-p, li, a, label {
-    font-family: 'Montserrat', sans-serif;
+p,
+li,
+a,
+label {
+  font-family: 'Montserrat', sans-serif;
 }
 
 @import 'header';
 @import 'footer';
 @import 'home';
 @import 'popup';
+@import 'cart';

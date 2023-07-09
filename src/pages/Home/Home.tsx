@@ -1,18 +1,21 @@
-import React, { useEffect } from 'react'
-import { useAppDispatch } from '../../hook'
-import { fetchAllCars } from '../../store/slice/carSlise'
+import React from 'react'
+import { useAppSelector } from '../../hook'
 import Cars from '../../components/Cars/Cars'
 
 
 const Home: React.FC = () => {
-    const dispatch = useAppDispatch()
-    useEffect(()=> {
-        dispatch(fetchAllCars())
-    }, [])
+
+    const { error } = useAppSelector(state => state.cars)
+
     return (
         <div className='home'>
             <div className="container">
-                <Cars/>
+                <Cars />
+            </div>
+            <div className="errors">
+                {
+                    error && <p>{error}</p>
+                }
             </div>
         </div>
     )

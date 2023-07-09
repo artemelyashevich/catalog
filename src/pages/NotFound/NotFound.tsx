@@ -2,7 +2,9 @@ import React from 'react'
 
 const NotFound: React.FC = () => {
   return (
-    <div>Not Found!!!!</div>
+    <div className='container'>
+      <h1>Not Found...</h1>
+    </div>
   )
 }
 

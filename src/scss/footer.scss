@@ -1,17 +1,22 @@
 .footer {
     z-index: 1;
-    width: 94em;
+    width: 99%;
     height: 9em;
-    margin: .5em;
+    margin: .5%;
     border-radius: .5em;
     background: $bg-color;
+    color: $font;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     &__content {
-        margin-top: 1.5em;
+
         font-size: 20px;
+
+        a {
+            color: $font;
+        }
     }
 }

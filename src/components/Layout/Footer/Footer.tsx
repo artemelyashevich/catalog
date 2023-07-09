@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     <div className='footer'>
         <div className="footer__content">
             <p>
-                Created by: <a href="https://github.com/artemelyashevich">@artemelyashevich</a>
+                Created by <a href="https://github.com/artemelyashevich" target='_blank'>@artemelyashevich</a>
             </p>
         </div>
     </div>
