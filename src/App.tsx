@@ -9,14 +9,17 @@ import Cart from "./pages/Cart/Cart"
 import { useAppDispatch, useAppSelector } from "./hook"
 import { addToCartFromLS } from './store/slice/cartSlice'
 import { fetchAllCars } from './store/slice/carSlice'
-
+import { setIsAuth } from './store/slice/userSlice'
 
 function App() {
 
   const dispatch = useAppDispatch()
-  const { filter } = useAppSelector(state => state.cars)
+  const { filter } = useAppSelector(store => store.cars)
   useEffect(() => {
     dispatch(addToCartFromLS())
+    if (localStorage.getItem('user') !== null) {
+      dispatch(setIsAuth())
+    }
   })
   useEffect(() => {
     dispatch(fetchAllCars(filter))

@@ -71,6 +71,15 @@
       "products": [],
       "balance": 0,
       "id": 1
+    },
+    {
+      "email": "test@gmail.com",
+      "password": "$2a$10$iXXcmO3HKidOAB3c1c.PIeQ9wBjiMmszionCXPWBZKRP/WoTfbISi",
+      "name": "test",
+      "photo": "",
+      "products": [],
+      "balance": 0,
+      "id": 2
     }
   ]
 }

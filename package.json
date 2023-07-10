@@ -1,6 +1,7 @@
 {
   "name": "catalog",
   "private": true,
+  "homepage": "https://artemelyashevich.github.io/catalog/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,13 +10,16 @@
     "server": "json-server-auth --watch db.json --port 8000",
     "start": "concurrently \"npm run dev\" \"npm run server\"",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "axios": "^1.4.0",
     "concurrently": "^8.2.0",
     "framer-motion": "^10.12.18",
+    "gh-pages": "^5.0.0",
     "json-server": "^0.17.3",
     "json-server-auth": "^2.1.0",
     "lodash.debounce": "^4.0.8",

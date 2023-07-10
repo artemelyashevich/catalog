@@ -6,7 +6,8 @@ export const fetchRegisterUser = createAsyncThunk<IUser, IUser>(
     'user/fetchRegisterUser',
     async (user) => {
         const response = await instance.post('/register', user)
-        console.log(response.data);
+
+        localStorage.setItem('user', JSON.stringify(response.data))
         return response.data
     }
 )
@@ -15,7 +16,7 @@ export const fetchLoginUser = createAsyncThunk<IUser, IUser>(
     'user/fetchLoginUser',
     async (user) => {
         const response = await instance.post('/login', user)
-        console.log(response.data);
+        localStorage.setItem('user', JSON.stringify(response.data))
         return response.data
     }
 )

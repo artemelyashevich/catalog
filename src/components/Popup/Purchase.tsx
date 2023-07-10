@@ -6,15 +6,15 @@ interface IProps {
 }
 
 const Purchase: React.FC<IProps> = (props) => {
-    const popupClose = (e: any) => {
-        if (e.target.classList.contains('overlay')) {
+    const popupClose = (e: React.MouseEvent<HTMLElement>) => {
+        if (e.currentTarget.classList.contains('overlay')) {
             props.setPopup(false)
         } else {
             props.setPopup(true)
         }
     }
     return (
-        <div onClick={(e: any) => popupClose(e)} className={`overlay ${props.popup && "overlay_active"}`}>
+        <div onClick={(e: React.MouseEvent<HTMLElement>) => popupClose(e)} className={`overlay ${props.popup && "overlay_active"}`}>
             <div className="popup">
                 <form action="" className="popup__form">
                     <div className="popup__form-top">
