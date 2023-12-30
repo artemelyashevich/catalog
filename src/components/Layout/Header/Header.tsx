@@ -17,8 +17,8 @@ const Header: React.FC = () => {
     const { filter } = useAppSelector(state => state.cars)
     const { isAuth } = useAppSelector(state => state.user)
     const { cartItems } = useAppSelector(store => store.cart)
-    const searchFunc = (e: React.FormEvent<HTMLInputElement>) => {
-        dispatch(setFilter({ ...filter, q: e.currentTarget.value }))
+    const searchFunc = (e: any) => {
+        dispatch(setFilter({ ...filter, q: e.target.value }))
     }
 
     const debounceSearch = debounce(searchFunc, 300)

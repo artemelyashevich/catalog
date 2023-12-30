@@ -10,7 +10,7 @@ interface IProps {
 }
 
 const Popup: React.FC<IProps> = (props) => {
-    const popupClose = (e: React.FormEvent<HTMLInputElement>) => {
+    const popupClose = (e: any) => {
         if (e.currentTarget.classList.contains('overlay')) {
             props.setPopup(false)
         } else {

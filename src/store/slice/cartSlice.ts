@@ -19,8 +19,8 @@ const cartSlice = createSlice({
     initialState,
     reducers: {
         addToCartFromLS(state) {
-            if (JSON.parse(localStorage.getItem('cart') || '') !== null) {
-                state.cartItems = JSON.parse(localStorage.getItem('cart') || '')
+            if (JSON.parse(localStorage.getItem('cart') || '[]') !== null) {
+                state.cartItems = JSON.parse(localStorage.getItem('cart') || '[]')
                 state.cartItems.forEach(element => {
                     state.cartTotalPrice += element.price
                 });
